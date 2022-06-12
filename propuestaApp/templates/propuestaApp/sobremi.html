@@ -1,0 +1,27 @@
+{% extends "propuestaApp/basic.html" %}
+{% load static %}
+{% block content %}
+        <!-- MAIN -->
+          <div class="card">
+            <div class="card-body" style="margin-left: 10px;">
+              
+              {% if aspirante %}
+              <h4><strong>Información &#129299</strong></h4>
+              <p><strong>Nombre:</strong>  {{ aspirante.first_name }}</p>
+              <p><strong>Apellidos:</strong>  {{ aspirante.last_name }}</p>
+              <p><strong>Email:</strong>  {{ aspirante.email }}</p>
+              <p><strong>Semestre:</strong>  {{ aspirante.semester }}</p>
+              <p><strong>Pregrado:</strong>  {{ aspirante.degree }}</p>
+              <p><strong>Uni:</strong>  {{ aspirante.institute }}</p>
+              {% endif %}
+              <h4><strong>Skills &#128293</strong></h4>
+              <ul>
+                  {% for skill in skills %}
+                    <li>{{skill.name_skill}} : {{skill.description_skill}}.</li>
+                  {% endfor %}
+              </ul>
+            </div>
+          </div>
+          
+
+{% endblock %}

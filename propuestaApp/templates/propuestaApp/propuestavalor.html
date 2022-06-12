@@ -1,0 +1,100 @@
+{% extends "propuestaApp/basic.html" %}
+{% load static %}
+{% block content %}
+        <!-- MAIN -->
+          <div class="container text-center mt-5">
+            <h5  class="display-6"><p id="cool">
+                <script type="text/javascript">
+                    var i = 0;
+                    var txt = 'Propuesta de Valor';
+         
+                    var velocidad = 50;
+         
+                    window.onload = function typeWriter(){
+                      if ( 1  < txt.length ){
+                         var res = txt.charAt(i);
+                         document.getElementById("cool").innerHTML += res;
+                         i++;	
+                         setTimeout(typeWriter , 75);
+                         }
+                     }
+                     console.log(Math.random()); 
+                 </script>
+            </p></h5>
+            <div class="row mt-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
+                    <div class="card shadow">
+                        <img src="{% static 'propuestaApp/img/aprender.jpeg' %}" class="card-img-top" alt="propuesta1">
+                        <div class="card-body">
+                            <h4>Pasion por aprender</h4>
+                            <p>Tengo una gran capacidad para investigar y aprender cosas nuevas, esto me ha permitido
+                                lograr los objetivos que me he propuesto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
+                    <div class="card shadow">
+                        <img src="{% static 'propuestaApp/img/valores.jpg' %}" class="card-img-top" alt="propuesta2">
+                        <div class="card-body">
+                            <h4>Integridad</h4>
+                            <p> Me caracterizo por ser una persona, respetuosa,, diligente,
+                                integra, leal y responsable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
+                    <div class="card shadow">
+                        <img src="{% static 'propuestaApp/img/liderazgo.jpg' %}" class="card-img-top" alt="propuesta3">
+                        <div class="card-body">
+                            <h4>Liderazgo</h4>
+                            <p> Me gusta asumir el liderazgo, ademas de trabajar en equipo,cumpliendo con los requerimientos especificos,
+                                logrando realizar las actividades con calidad y eficiencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
+                    <div class="card shadow">
+                        <img src="{% static 'propuestaApp/img/tiempo.jpg' %}" class="card-img-top" alt="propuest4">
+                        <div class="card-body">
+                            <h4>Disponibilidad</h4>
+                            <p> 
+                                Cuento con disponibilidad de tiempo completo para desarrollar mi trabajo
+                                de grado en modalidad de pasantia para el segundo semestre del 2022.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
+                    <div class="card shadow">
+                        <img src="{% static 'propuestaApp/img/aporar.webp' %}" class="card-img-top" alt="propuesta2">
+                        <div class="card-body">
+                            <h4>Entusiasmo por crecer</h4>
+                            <p> 
+                               Estoy dispuesto a aportar todos mis conocimientos a la empresa que me contrate, para
+                               crecer juntos academica y laboralmente, y asi poder continuar en ella.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <img src="{% static 'propuestaApp/img/motivation.jpg' %}" class="card-img-top" alt="propuesta6">
+                            <h4>Motivación</h4>
+                            <p> 
+                               La motivación es algo que me caracteriza, y en esta nueva etapa de mi vida
+                               estoy muy motivado por lograr todos mis objetivos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "propuestaApp/basic.html" %}
+{% load static %}
+{% block content %}
+        <!-- MAIN -->
+          <div class="card" style="margin-top: 50px; text-align: center;">
+            <div class="card-body">
+              <strong><h4 class="center_home" id="title_home">Bienvenido a Propuesta De Valor App</h4></strong> 
+              <br>
+              <p class="center_home">
+                   En este sitio podras encontrar información sobre Christian,</p>
+               <p class="center_home"> 
+                   ademas conoceras su propuesta de valor.</p> 
+            <p>Asi que, espero que mi perfil academico y laboral se adapte a los requerimientos de la vacante</p>  
+            </div>
+            <div class="text-center">
+            <img id="profilephoto" src="{% static 'propuestaApp/img/chris.jpg' %}" alt="Chris's photo" width="150" height="150"> 
+           </div>    
+        </div>
+
+
+{% endblock %}
